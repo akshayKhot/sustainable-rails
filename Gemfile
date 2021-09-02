@@ -16,6 +16,10 @@ gem "brakeman"
 # dependencies for known vulnerabilities
 gem "bundler-audit"
 
+# lograge changes Rails' logging to
+# a more traditional one-line-per-event format
+gem "lograge"
+
 # An XML toolkit for Ruby
 gem 'rexml', '~> 3.2', '>= 3.2.5'
 
