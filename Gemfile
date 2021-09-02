@@ -8,6 +8,9 @@ ruby '3.0.2'
 # development and testing
 gem 'dotenv-rails', groups: [:development, :test]
 
+# An XML toolkit for Ruby
+gem 'rexml', '~> 3.2', '>= 3.2.5'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4'
 # Use sqlite3 as the database for Active Record
