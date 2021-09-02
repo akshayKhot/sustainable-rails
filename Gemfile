@@ -8,6 +8,14 @@ ruby '3.0.2'
 # development and testing
 gem 'dotenv-rails', groups: [:development, :test]
 
+# Brakeman analyzes our code
+# for security vulnerabilities
+gem "brakeman"
+
+# bundler-audit enables bundle audit which analyzes our
+# dependencies for known vulnerabilities
+gem "bundler-audit"
+
 # An XML toolkit for Ruby
 gem 'rexml', '~> 3.2', '>= 3.2.5'
 
