@@ -1,24 +1,20 @@
-# README
+# Sustainable Rails - Widgets
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Setup
 
-Things you may want to cover:
+1. Pull down the app from version control
+2. Run `bin/setup`
 
-* Ruby version
+### Run the app
 
-* System dependencies
+1. Run `bin/run`
 
-* Configuration
+### Tests and CI
 
-* Database creation
+1. Run `bin/ci` to run all tests and checks for the app
+2. `tmp/test.log` will use the production logging format and *not* the development one. 
 
-* Database initialization
+### Production
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* All runtime configuration should be supplied via UNIX environment variables.
+* Rails logging uses lograge. Run `bin/setup help` for more details on how to set it up. 
