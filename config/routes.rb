@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :widgets, only: %i{ show index }
+  
+  # Custom Routes
+  get "/amazing", to: "widgets#index"
 end
