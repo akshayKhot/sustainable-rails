@@ -1,5 +1,18 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= @widget.name %></h1>
-<h2>ID #<%= @widget.id %>
+<h1><%= @widget.name %> (<%= @widget.manufacturer_id %>)</h1>
 
+<% if flash[:notice].present? %>
+	<aside>
+		<%= flash[:notice] %>
+	</aside>
+<% end %>
+
+<section>
+	<h4>Add Rating</h4>
+	<ol>
+		<% (1..5).each do |rating| %>
+			<li><%= button_to rating, widget_ratings_path, params: { widget_id: @widget.id, rating: rating }  %></li>
+		<% end %>
+	</ol>
+</section>
